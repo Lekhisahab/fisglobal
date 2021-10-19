@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fisglobalangular';
+  user :any
+  successlogin(){
+    this.user = "Ashu Lekhi"
+  }
 }

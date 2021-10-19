@@ -126,4 +126,61 @@ Event binding --- calling the function on events happening
 
 (click)="methodName()"  (circular parenthesis)
 
+One way Binding --- becaus the value is going from ts to html 
+Data binding 
+Event Binding 
+Property Binding 
+
+<image  [src]="something"> in the case of square braces the something will be considered as property of component
+
+
+ts to html 
+html to ts (user is entering and u want to get it what user is entering )
+
+2 way data binding 
+Steps to use 2 way binding 
+1) Import FormsModule into app.module.ts
+
+[(ngModel)] = "propertyname"
+
+
+Cake component should be desinged in a manner that name image price should be passed to cake component and it should show the data it received 
+
+
+Cakelist component is displaying cake component ?
+cake component is child of cakelist component
+
+Parents can pass inputs to their children
+
+<componentname  prop1="value1" prop2="value2" prop3="value3" />
+
+which component is going to receive the input Child (Cake component)
+
+
+Create a component known as Addcake
+Name 
+Price 
+Weight 
+Description 
+image <input type="file" />
+flavour
+eggless  (checkout)
+ingredients (enter ingredients seperated by comma (,))
+
+<button>Add Cake </button>
+
+Components 
+Oneway Binding  - Event propperty and data 
+2 way data binding 
+Component Interaction 
+Parent to child @Input 
+Child TO Parent @Output ()
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Repeation of elemnts
+Conditional rendering
+Services/Injectables 
+
 

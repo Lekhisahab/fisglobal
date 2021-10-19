@@ -7,12 +7,12 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <form style="margin-left: 5em;" class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <input name="search" [(ngModel)]="searchtext" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button (click)="search($event)" class="btn btn-outline-success">Search</button>
               </form> 
         </ul>
 
-        
+
         <div class="d-flex">
             <button (click)="demo()" class="btn btn-primary">Login</button>
         </div>

@@ -9,11 +9,13 @@ import { Component } from '@angular/core';
 export class NavbarComponent{
     brand:any = "Ashu's Cake Gallery"
 
+    searchtext:any = "Red Velvet"
+
     search(event:any){
         event.preventDefault()
-        console.log("User is trying to search something")
+        console.log("User is trying to search something" , this.searchtext)
     }
-    
+
     demo(){
         alert()
     }
