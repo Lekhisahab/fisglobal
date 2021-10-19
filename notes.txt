@@ -1,0 +1,129 @@
+If you dont have nodejs 
+Download Node js from nodejs.org recommended version 
+
+Install Angular cli using command prompt
+
+npm install -g @angular/cli
+
+After installation of angular cli create a new project in angular 
+
+in command prompt go to Desktop path 
+
+type 
+
+ng new projectname
+For Example ng new fisangular
+
+It will ask for routing -- select yes
+
+It will ask for styling -- select css 
+
+>>>>>>>>>> File Structure 
+
+1) node_modules contains all the packages used for creating angular project
+2) src folder will be source code of your peoject 
+3) package.json package.json is the description of your project lets say later u install one package gmail-login
+  gmail-login will be added as a dependency into package.json
+
+
+  npm install inside the project will install all the dependencies mentioned in package.json into node_modules
+
+  TO start the project one time 
+  ng serve
+
+
+  ng serve starts a http server in your system , http server is by default listening to 4200 port number 
+  once server is started go to browser and open http://localhost:4200
+
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  Angular says create you project into small pieces of components 
+  Component based architecture 
+
+
+  Divide your app into components and integrate them together 
+
+For example login , signup , forgot , video , videolist navbar , carousel
+
+What is a component 
+Component is basically a reusable entity which u see in your project 
+
+component is whatever u see on ur screen 
+
+
+Appcomponent is the one which is created by ng serve 
+
+when u run ng serve
+
+1) A server is created and running at 4200
+2) that server sends your index.html file inside the browser
+3) index.html file shows a component to you which is app component 
+
+
+A component which is placed inside index.html is known as Root Component
+go to app.module.ts and check bootstrap array and tell me which component will go into index.html ?
+
+
+Manager 
+
+Senior Managaer 
+
+Business analyst 
+
+Qa
+
+All of these are employees 
+
+Similarly everything in angular is a class
+
+When someone ask to create a component what will we create 
+we will create a class 
+
+
+// creating a component 
+
+3 parts -- 
+
+creation  - create a folder with 3 files for example carousel corousel.component.ts , corousel.component.html corousel.component.css.   In ts file create a component class
+
+
+declaration 
+usage 
+
+
+<app-button>
+
+>>>>>>>>>>>>> To create component using cli >>>>>>>>>>>>>>>>>>
+ng generate component componentname
+
+ng generate component signup
+it will create the component for u and it will declare the component as well 
+
+
+
+After creating components 
+We will design 
+
+FOr designing we will use external library BOOTSTRAP 
+
+// integrate by cdn
+getbootstrap.com and include cdn of css and js into index.html
+
+
+to use images in angular put it in inside assets folder in src and use path with extension 
+
+Example 
+<img src="assets/imagename.jpeg">
+<img src="assets/imagename.jpg">
+<img src="assets/imagename.png">
+<img src="assets/imagename.webp">
+
+
+Data Binding -- showing data of component class into component html via INTERPLATION    {{}} DOUBLE CURLY BRACES
+If i have to show data in any component html it must come from ts of that component
+
+
+Event binding --- calling the function on events happening 
+
+(click)="methodName()"  (circular parenthesis)
+
+
