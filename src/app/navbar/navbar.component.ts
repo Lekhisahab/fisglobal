@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 
 @Component({
@@ -7,8 +7,22 @@ import { Component } from '@angular/core';
     styleUrls:['./navbar.component.css']
 })
 export class NavbarComponent{
-    brand:any = "Ashu's Cake Gallery"
+    @Input() brand:any
+    isloggedin:any =  false 
 
+
+    ngDoCheck(){
+        if(localStorage.token){
+            this.isloggedin = true
+        }
+        else{
+            this.isloggedin = false
+        }
+    }
+
+    logout(){
+        localStorage.clear()
+    }
     searchtext:any = "Red Velvet"
 
     search(event:any){
@@ -19,6 +33,8 @@ export class NavbarComponent{
     demo(){
         alert()
     }
+
+    
 
 }
 

@@ -267,3 +267,21 @@ cakes:any = [
   Defining the path and components corresponding to those paths is known as Routing
 
 
+
+  Life Cycle of components 
+  Today components are coming on screen and leaving the screen 
+
+
+From coming on screen to leaving screen 
+it goes through a process known as life cycle 
+
+constructor() -- creation of component is started 
+ngOnChanges() -- If any components recieves input properties this will be called and when input properties are updated then also it is called 
+ngOnInit() -- once the components received input properties successfully this will be called
+ngOnDestroy()  -- just before the component is leaving the screen it will be called 
+
+
+
+
+ngDoCheck()
+

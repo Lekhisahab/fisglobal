@@ -13,10 +13,17 @@
         </ul>
 
         
-        <div class="d-flex">
+        <div *ngIf="!isloggedin" class="d-flex">
             <button routerLink="/login"  class="btn btn-primary">Login</button>
-            <button routerLink="/cart"  class="btn btn-warning">Cart</button>
         </div>
+
+        <div *ngIf="isloggedin" class="d-flex">
+        <button style="margin-right: 5em;" routerLink="/cart"  class="btn btn-warning">Cart</button>
+        <button (click)="logout()"  routerLink="/"  class="btn btn-danger">Logout</button>
+
+      </div>
+
+
       </div>
     </div>
   </nav>

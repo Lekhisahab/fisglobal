@@ -10,6 +10,7 @@ import { ForgotComponent } from './forgot/forgot.component';
 import { SearchComponent } from './search/search.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { CakedetailsComponent } from './cakedetails/cakedetails.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path:'addcake', component:AddcakeComponent},
   {path:'cart', component:CartComponent},
   {path:'search', component:SearchComponent},
+  {path:'cake', component:CakedetailsComponent},
   {path:'checkout', component:CheckoutComponent},
   {path:'forgot', component:ForgotComponent},
   {path:'**', component:PagenotfoundComponent},
