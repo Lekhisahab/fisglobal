@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from '../common.service';
 
 @Component({
   selector: 'app-cakelist',
@@ -7,21 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CakelistComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cs : CommonService) { 
+    this.cakes = this.cs.cakes
+  }
 
-  cakes:any = [
-    {
-      name:"Choco Truffle Cake",
-      price:500,
-      image:"assets/truffle.jpeg"
-    },
-    {
-      name:"Mango Cake",
-      price:600,
-      image:"assets/mango.jpeg"
-    },
-  
-  ]
+  cakes:any
 
   ngOnInit(): void {
   }

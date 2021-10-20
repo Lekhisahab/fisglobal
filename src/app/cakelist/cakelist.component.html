@@ -1,5 +1,4 @@
 <div class="row">
-    <app-cake [cakedata]="cakes[0]"  class="col-3"></app-cake>
-    <app-cake [cakedata]="cakes[1]"  class="col-3"></app-cake>
-   
+    <app-cake *ngFor="let each of cakes" [cakedata]="each"  class="col-3"></app-cake>
+    
 </div>

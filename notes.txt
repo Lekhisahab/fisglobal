@@ -179,8 +179,91 @@ Child TO Parent @Output ()
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-Repeation of elemnts
+Repetion of elements
 Conditional rendering
 Services/Injectables 
+
+
+Repeat items in array
+*ngFor is used to repeat the elements for number of items in an array 
+
+Now if array of users = ["Ashu"  "Parvinder" ,"Vijay" ]
+if array is of objects = [{name:"Ashu",id:384783}  , {name:"Vijay" ,id:334565}]
+
+Anything html element which starts with angular beaces
+<element *ngFor="let each of arrayname"></element>
+
+We want to show elements only if our condition is true 
+Conditional rendering 
+
+
+<element *ngIf="false">  </element>
+
+
+You have to display those cakes using *ngFor 
+
+and those objects few will have an extra key known as egless:true 
+
+those cakes which will have egless fiield in the object will render a green symbol for veg 
+
+
+we have used one function validateEmail in 2 components ?
+Login and Signup 
+
+
+We have a common way known as Services
+
+
+Services/Injectables are the classes used for sharing common things 
+
+We will put the commo things into services and use it in any component we need 
+we inject the service into component and use it 
+
+
+Create a service 
+ng g s servicename  ng g s common
+
+Put the common things into service 
+i have placed a function validateEmail()
+
+
+
+Inject the service into component and use it
+How do we inject it ? we inject it into constructor of component
+
+
+cakes:any = [
+    {
+      name:"Choco Truffle Cake",
+      price:500,
+      image:"assets/truffle.jpeg",
+      eggless:true
+    },
+    {
+      name:"Mango Cake",
+      price:600,
+      image:"assets/mango.jpeg"
+    },
+    {
+      name:"Fruit Cake",
+      price:800,
+      image:"assets/fruit.webp"
+    }
+  
+  ]
+
+
+  we have to put in services 
+
+  then we have to use this cakes array in 2 places 
+  Cakelist component 
+  Cart component 
+
+
+  routeroutlet will load that component whatever we will tell it load
+
+  Process of telling which component to load on which path is known as Routing 
+
+  Defining the path and components corresponding to those paths is known as Routing
 
 

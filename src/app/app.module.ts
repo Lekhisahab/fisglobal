@@ -12,6 +12,13 @@ import { CakelistComponent } from './cakelist/cakelist.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AddcakeComponent } from './addcake/addcake.component';
+import { AdminComponent } from './admin/admin.component';
+import { CartComponent } from './cart/cart.component';
+import { ForgotComponent } from './forgot/forgot.component';
+import { SearchComponent } from './search/search.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { CakedetailsComponent } from './cakedetails/cakedetails.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +30,14 @@ import { AddcakeComponent } from './addcake/addcake.component';
     CakelistComponent,
     HomeComponent,
     LoginComponent,
-    AddcakeComponent
+    AddcakeComponent,
+    AdminComponent,
+    CartComponent,
+    ForgotComponent,
+    SearchComponent,
+    PagenotfoundComponent,
+    CakedetailsComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

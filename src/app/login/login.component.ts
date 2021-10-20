@@ -16,6 +16,12 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+   validEmail(e:any) {
+    var filter = /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
+    return String(e).search (filter) != -1;
+   }
+
   login(){
     if(this.email=="test@test.com" && this.password=="password"){
       this.loginDone.emit()
