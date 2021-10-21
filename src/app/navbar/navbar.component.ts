@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,6 +11,16 @@ export class NavbarComponent{
     @Input() brand:any
     isloggedin:any =  false 
 
+    searchtext:any 
+    search(event:any){
+        event.preventDefault()
+        if(this.searchtext){
+            this.router.navigate(["/search"],{queryParams:{q:this.searchtext}})
+        }
+    }
+    constructor(private router : Router){
+
+    }
 
     ngDoCheck(){
         if(localStorage.token){
@@ -19,16 +30,10 @@ export class NavbarComponent{
             this.isloggedin = false
         }
     }
-
     logout(){
         localStorage.clear()
     }
-    searchtext:any = "Red Velvet"
-
-    search(event:any){
-        event.preventDefault()
-        console.log("User is trying to search something" , this.searchtext)
-    }
+   
 
     demo(){
         alert()

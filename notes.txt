@@ -285,3 +285,85 @@ ngOnDestroy()  -- just before the component is leaving the screen it will be cal
 
 ngDoCheck()
 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ http Calls /api Calls
+// programatical navigation 
+// pass data/info in routes 
+
+Frontend developers are all about making api calls 
+For login
+signup
+all products 
+details 
+search
+Cartcheckout
+order
+
+
+Frontend is dependent on APi 
+api is a url which need to be hit from angular 
+Backend developer api 
+
+Api - Where How what 
+Where  ---- url
+How ----- methods get post patch put atc rest or http methods 
+what -- request json
+
+Document 
+Api for getting all the cakes 
+URL + Methods + RequestJSON
+
+If method is get there is no rrequestjson
+
+Get methods dont have any body
+
+in Angular for making api calls we have HTTPCLIENTMODULE which needs to be imported from @angular/common/http
+
+
+
+Airtel Idea Jio 
+
+HttpClient 
+
+login component and signup component injected the service CommonService 
+https://apifromashu.herokuapp.com/api
+1) All Cakes from backend 
+url - /allcakes
+
+
+url - /register
+method - post
+data : {email,name,password}
+
+
+url - /login
+method - post
+data : {email,password}
+
+
+We will make a request to api with our credentials 
+If our credentials are correct we will receive a token 
+we will check if token is coming we will navigate to the path where we are showing the list of cakes 
+
+
+Steps to use ngx-ui-loader
+to install module
+to integrate module into your project 
+to place the loader component anywhere in your html preferabbly app.component.htmlal
+
+
+/searchcakes?q=+thattextuserhasentered
+
+
+HOw to pass data in routes ? 2 ways 
+1) query params 
+2) Params 
+
+
+2nd way i.e params needs a parameterised route 
+
+/routename/:cakeid
+/routename/:param1/:param2/:param3/:param4
+
+

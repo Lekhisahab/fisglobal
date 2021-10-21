@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule} from "@angular/forms"
+import {NgxUiLoaderModule} from "ngx-ui-loader"
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,8 @@ import { SearchComponent } from './search/search.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { CakedetailsComponent } from './cakedetails/cakedetails.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+
+import {HttpClientModule} from "@angular/common/http"
 
 @NgModule({
   declarations: [
@@ -42,7 +45,9 @@ import { CheckoutComponent } from './checkout/checkout.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    NgxUiLoaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -20,7 +20,7 @@ const routes: Routes = [
   {path:'addcake', component:AddcakeComponent},
   {path:'cart', component:CartComponent},
   {path:'search', component:SearchComponent},
-  {path:'cake', component:CakedetailsComponent},
+  {path:'cake/:cakeid', component:CakedetailsComponent}, // parameterised route :cakeid is the parameter
   {path:'checkout', component:CheckoutComponent},
   {path:'forgot', component:ForgotComponent},
   {path:'**', component:PagenotfoundComponent},

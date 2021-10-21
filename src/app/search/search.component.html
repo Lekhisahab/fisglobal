@@ -1,1 +1,6 @@
-<p>search works!</p>
+<h1>{{searchresults.length }} results found for  {{searchtext}} cakes</h1>
+
+<div class="row">
+    <app-cake *ngFor="let each of searchresults" [cakedata]="each"  class="col-3"></app-cake>
+    
+</div>
