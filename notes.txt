@@ -367,3 +367,43 @@ HOw to pass data in routes ? 2 ways
 /routename/:param1/:param2/:param3/:param4
 
 
+
+we have a common service 
+there we will define cakes:any
+
+
+in component where we are displaying cakes first we will check if cakes are there in common service we will not go to api 
+if they are not there in service we will go to backend bring it on and store it into the common service 
+
+url -/addcaketocart
+method -post 
+requestjson is = {cakeid,name,price,weight,image}
+
+
+// Task 
+
+// When u go to cart page u have to fetch cakes added by a user from backend 
+
+// url -  https://apifromashu.herokuapp.com/api/cakecart
+method - post
+data - {} blank object
+
+headers part is exactly same way u have used in addto cart function exactly same 
+
+this will give u an array of cakes added by a user 
+ 
+ u have to show it into cart.component.html
+
+
+// passing the data in routes 
+// Params and query params 
+// Route guard
+// Api Calls 
+// Authorization 
+// ngelse 
+// programatical navigation 
+
+
+>>>>>>>>>>>>>>>>>>> As of now we have components and services 
+
+Pipes and Directives 

@@ -12,17 +12,24 @@ export class CakelistComponent implements OnInit {
 
   constructor(private cs : CommonService , private http : HttpClient , private loader : NgxUiLoaderService) { 
     this.cakes = []
+
+    if(this.cs.cakes){
+      this.cakes = this.cs.cakes
+    }
+    else{
     var url = "https://apifromashu.herokuapp.com/api/allcakes"
     this.loader.start()
     this.http.get(url).subscribe((response:any)=>{
       console.log("Response from all cakes api" , response)
       this.loader.stop()
       this.cakes = response.data
+      this.cs.cakes = this.cakes
     }, (error)=>{
       this.loader.stop()
       console.log("Error from all cakes api" , error)
     })
   }
+}
   cakes:any
 
   ngOnInit(): void {
