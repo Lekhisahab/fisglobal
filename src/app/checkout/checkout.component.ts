@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from '../common.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-checkout',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private common : CommonService , private router : Router) { 
+    if(!this.common.cartitems){
+      this.router.navigate(["/cart"])
+    }
+  }
 
   ngOnInit(): void {
   }

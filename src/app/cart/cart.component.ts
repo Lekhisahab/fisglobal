@@ -13,7 +13,12 @@ export class CartComponent  {
    cartitems:any = []
    totalPrice:any = 0
 
-  constructor( private http : HttpClient , private loader : NgxUiLoaderService , private router : Router) {
+   checkout(){
+     this.common.cartitems = this.cartitems
+     this.common.price = this.totalPrice
+   }
+
+  constructor(private common : CommonService, private http : HttpClient , private loader : NgxUiLoaderService , private router : Router) {
     
     if(!localStorage.token){
       this.router.navigate(["/"])

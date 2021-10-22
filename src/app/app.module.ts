@@ -24,7 +24,10 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import {HttpClientModule} from "@angular/common/http";
 import { DiscountPipe } from './discount.pipe';
 import { LanguagePipe } from './language.pipe';
-import { HighlightDirective } from './highlight.directive'
+import { HighlightDirective } from './highlight.directive';
+import { AddressComponent } from './address/address.component';
+import { PaymentComponent } from './payment/payment.component';
+import { OrdersummaryComponent } from './ordersummary/ordersummary.component'
 
 @NgModule({
   declarations: [
@@ -46,7 +49,10 @@ import { HighlightDirective } from './highlight.directive'
     CheckoutComponent,
     DiscountPipe,
     LanguagePipe,
-    HighlightDirective
+    HighlightDirective,
+    AddressComponent,
+    PaymentComponent,
+    OrdersummaryComponent
   ],
   imports: [
     BrowserModule,

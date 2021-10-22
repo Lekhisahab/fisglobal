@@ -55,3 +55,5 @@ export class NavbarComponent{
 // component is ready to use now 
 
 // use it by the name of the tag u have mentioned into selector tag
+
+

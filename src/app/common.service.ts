@@ -7,8 +7,11 @@ export class CommonService {
 
   constructor() { }
 
-  cakes:any 
-    
+  cakes:any
+  cartitems:any 
+  price:any
+  userdetails:any
+  order:any
 
   validEmail(e:any) {
     var filter = /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;

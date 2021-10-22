@@ -539,6 +539,37 @@ Steps
 4) in the directive check if user who is loggedin belongs to user admin group than dont do any thing otherwise remove it from the dom 
 5) code for removing is this.element.nativeElement.remove()
 
+>>>>>>>.Nested Routing/ Child Routing >>>>>>>>>>>>>>
+
+Address component have to take user input 
+name , address , city , pincode , phone 
+
+
+when u click on add address button it should show these details into console
+
+
+// Place Order Requirement 
+Step 1 ) When u click on checkout we will store all the information that is cart items and price into common service
+
+Step 2) When u click on add address button we will capture the address details into common service
+
+Step 3 When we move to payment component there we will display a mesaage and a button that Sorry we currently offer only cash on delivery and a button place order 
+
+Step 4 When place order button is clicked we will gather that information from common service and hit the api with the requestjson 
+
+step 5 requestjson  -   to the api 
+/addcakeorder along with headers 
+
+An order with these details will be placed for that user 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+Form Validation 
+
+Template Varibales 
+
+Template is html/view 
+Varibale defined on html file/element is known as template varibale 
 
 
 

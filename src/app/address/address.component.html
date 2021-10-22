@@ -1,0 +1,42 @@
+<div class="container">
+    <form #amandeep="ngForm" class='col-md-6' (submit)="amandeep.valid && addAddress()">
+        <div class="form-group">
+            <label>Name</label>
+            <input required  name="varun" #varun="ngModel" [(ngModel)]="userdetails.name" type="text" class="form-control">
+            <div style="color:red" *ngIf="amandeep.submitted && varun.errors">
+                <label *ngIf="varun.errors.required">Name is Required</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Address</label>
+            <input required name="parvinder" #parvinder="ngModel" [(ngModel)]="userdetails.address"  type="text" class="form-control">
+            <div style="color:red" *ngIf="amandeep.submitted && parvinder.errors">
+                <label *ngIf="parvinder.errors.required">Address is Required</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>City</label>
+            <input required name="likitha" #likitha="ngModel" [(ngModel)]="userdetails.city"  type="text" class="form-control">
+            <div style="color:red" *ngIf="amandeep.submitted && likitha.errors">
+                <label *ngIf="likitha.errors.required">City is Required</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Pincode</label>
+            <input required name="sheetal" #sheetal="ngModel" [(ngModel)]="userdetails.pincode"  type="text" class="form-control">
+            <div style="color:red"  *ngIf="amandeep.submitted && sheetal.errors">
+                <label *ngIf="sheetal.errors.required">Pincode is Required</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Phone</label>
+            <input required name="rexina" #rexina="ngModel" [(ngModel)]="userdetails.phone"  type="text" class="form-control">
+            <div style="color:red" minlength="10" *ngIf="amandeep.submitted && rexina.errors">
+                <label *ngIf="rexina.errors.required">Phone is Required</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary">Add Address</button>
+        </div>
+    </form>
+</div>
