@@ -406,4 +406,140 @@ this will give u an array of cakes added by a user
 
 >>>>>>>>>>>>>>>>>>> As of now we have components and services 
 
-Pipes and Directives 
+Pipes and  Directives
+
+Download Heroku cli
+https://devcenter.heroku.com/articles/heroku-cli
+
+Create an account on Heroku
+https://heroku.com
+
+Download Git 
+https://git-scm.com/downloads
+
+Create an account on github
+https://github.com
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Pipes 
+
+Pipes are classes which are used for presenting different format or different data itself 
+
+Data is stored into number 
+but shown as 1.1M
+
+Do they store time difference ?
+They store time 
+but they are presenting to user is differnce in time 
+
+Telecom Operators 
+Example ? 236 Gb they store in bytes 
+they are presenting into mb gbs tbs different presentattion 
+
+
+Concept when data is different and shown thing is sifferent we can achieve through pipes 
+
+
+when we want to present data to user in a different format without altering the data we use pipes
+
+{{data|pipename}}
+
+how to create our own pipe ?
+
+ng g p pipename
+
+Arguments in Pipe  {{data|pipename:arg:ar2:argn}}
+multiple pipes together --- Pipe Chaining
+
+
+
+Steps
+
+ 1) Create a pipe known as language
+2) inside that create a language object  the language u like for example i like spanish var spanish =   {   {"hello":"hola"}
+3) write done sonme words into this object for example hello 
+4 ) when u use this pipe into html ,  if that word exits into the language object it will return the translated  word otherwise it will return the same word 
+
+var user = {name:"Ashu Lekhi",email:"ashu.lekhi0540@gmail.com" , password:"test"}
+undefined
+var result = user.role
+undefined
+result
+undefined
+var r = user.role || 10
+undefined
+r 
+10
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Directives  >>>>>>>>>>>>>>>>>>>>>>
+
+
+a communicate html can only call a function written in its ts file 
+
+x.component.html
+if any function needs to be called from x.component.html it must be into which file x.component.ts
+
+any function in y.component.ts cant be called from  any other html 
+
+
+conclusion --- any function can be called only from that html file 
+
+NOw this is not fair
+we want some functionality to be called from any html files 
+
+
+Services are also for sharing but they can be shared only in component ts files 
+they cant be used on html files 
+
+
+but here we want some common functionality to be achived from html file 
+
+Example 
+ngFor  -- repeates the element 
+ngIf -- Conditionally renders the element 
+ngModel -- provide 2 way binding 
+
+
+All these are examples of DIRECTIVES 
+
+SUMMARY  - Directives are something which can be called driectly from html files for a common functionality 
+
+ngelse is a directive 
+ng-template is 
+
+things which are used as html tags are components 
+ngelse was a directive
+
+var y = []
+var xyz = {}
+
+How to create our directive 
+ng g d directivename
+
+
+Directive gets the reference of the element and it does something with that element
+
+
+we will pass inputs 
+
+hostElement is that element on which we have placed the directive
+
+we will listen to the user events on this host 
+
+
+if a user who has loggedin is not an admin user we will remove that element from the dom
+
+<a parvinder>
+Directive will check if loggedin user is admin user we will let that element in or we willl remove that eleement from our country
+
+Steps 
+1) Create a directive isadmin
+2) create an array of hardcode users var adminusers:any = ["ashu.lekhi@gmail.com",parvinde@gmail.com, likhitha@somemail.com , sheetal@some.com , varun@something.com]
+3) you have to modify ur login component also once user logs in store email as well into localstorage
+4) in the directive check if user who is loggedin belongs to user admin group than dont do any thing otherwise remove it from the dom 
+5) code for removing is this.element.nativeElement.remove()
+
+
+
+
+

@@ -32,6 +32,7 @@ export class NavbarComponent{
     }
     logout(){
         localStorage.clear()
+        window.location.href="/"
     }
    
 

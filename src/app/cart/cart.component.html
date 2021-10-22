@@ -1,4 +1,4 @@
-<div class="container">
+<div  color="red" class="container">
     <div *ngIf="cartitems.length>0 ;else emptycarttemplate">
         <h1> Your Shopping Cart </h1>
         <table class="table">
@@ -21,6 +21,7 @@
                     <td>{{each.quantity}}</td>
                     <td><button (click)="removeFromCart(i)" class="btn btn-danger">X</button></td>
                 </tr>
+
             </tbody>
         </table>
         <div>

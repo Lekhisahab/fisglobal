@@ -32,6 +32,8 @@ export class LoginComponent implements OnInit {
         console.log("Response from login api", response)
         if(response.token){
           localStorage.token = response.token
+          localStorage.email = response.email
+
           this.router.navigate(["/"])
         }
       },(error)=>{

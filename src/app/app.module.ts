@@ -21,7 +21,10 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { CakedetailsComponent } from './cakedetails/cakedetails.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 
-import {HttpClientModule} from "@angular/common/http"
+import {HttpClientModule} from "@angular/common/http";
+import { DiscountPipe } from './discount.pipe';
+import { LanguagePipe } from './language.pipe';
+import { HighlightDirective } from './highlight.directive'
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import {HttpClientModule} from "@angular/common/http"
     SearchComponent,
     PagenotfoundComponent,
     CakedetailsComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    DiscountPipe,
+    LanguagePipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
